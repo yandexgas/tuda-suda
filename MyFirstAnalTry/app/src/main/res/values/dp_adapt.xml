@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //chat icon register window -ciw
+    <dimen name="ciw_top">80dp</dimen>
+    <dimen name="ciw_left">30dp</dimen>
+    <dimen name="ciw_size">275dp</dimen>
+    //text elements register window - terw
+    <dimen name="terw_top">170dp</dimen>
+    <dimen name="terw_designTEXT_left">40dp</dimen>
+    <dimen name="terw_designTEXT_size">42sp</dimen>
+    <dimen name="terw_login_top">30dp</dimen>
+    <dimen name="terw_passward_top">10dp</dimen>
+    <dimen name="terw_loginTEXT_size">18sp</dimen>
+    <dimen name="terw_login_button_TEXT_size">18sp</dimen>
+    <dimen name="terw_loginTEXT_left">17dp</dimen>
+    <dimen name="terw_button_enter_size">240dp</dimen>
+    <dimen name="terw_button_enter_horizintal">70dp</dimen>
+    <dimen name="terw_button_enter_vertical">25dp</dimen>
+    <dimen name="terw_register_btn_heigh">24dp</dimen>
+    <dimen name="terw_register_btn_horizontal">120dp</dimen>
+    <dimen name="terw_register_btn_top">50dp</dimen>
+    <dimen name="terw_forgot_btn_top">20dp</dimen>
+
+    // icons alternative register window - iarw
+    <dimen name="iarw_top">10dp</dimen>
+    <dimen name="iarw_horisontal">123dp</dimen>
+    <dimen name="iarw_icon_size">47dp</dimen>
+    <dimen name="iarw_icon_horisontal">10dp</dimen>
+
+    //top window = tw
+    <dimen name="tw_margin">20dp</dimen>
+
+</resources>

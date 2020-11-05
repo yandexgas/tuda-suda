@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/Chat_sign_registr_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ciw_left"
+        android:layout_marginTop="@dimen/ciw_top"
+        android:contentDescription='bakground design element "chat icon"'
+        app:srcCompat="@drawable/signin_up_icon"
+        tools:srcCompat="@drawable/signin_up_icon"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/terw_designTEXT_left"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/terw_design_TEXT"
+                android:textColor="@color/text_header"
+                android:textSize="@dimen/terw_designTEXT_size"
+                android:textStyle="bold" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/sign_email_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/terw_loginTEXT_left"
+                android:layout_marginTop="@dimen/terw_login_top"
+                android:autoLink="email"
+                android:autofillHints=""
+                android:fontFamily="sans-serif"
+                android:hint="@string/login"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/sign_passward"
+                android:singleLine="false"
+                android:textSize="@dimen/terw_loginTEXT_size"
+                app:met_baseColor="@color/text_main"
+                app:met_errorColor="@color/err_color"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_primaryColor="@color/enter_button"
+                app:met_textColor="@color/text_main"
+                app:met_underlineColor="@color/edit_text_signIN" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/sign_passward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/terw_loginTEXT_left"
+                android:autofillHints=""
+                android:ems="16"
+                android:fontFamily="sans-serif"
+                android:hint="@string/passward"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:imeOptions="actionDone"
+                android:singleLine="false"
+                android:textSize="@dimen/terw_loginTEXT_size"
+                app:met_baseColor="@color/text_main"
+                app:met_errorColor="@color/err_color"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_primaryColor="@color/enter_button"
+                app:met_textColor="@color/text_main"
+                app:met_underlineColor="@color/edit_text_signIN" />
+
+            <Button
+                android:id="@+id/button_enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/terw_button_enter_horizintal"
+                android:layout_marginVertical="@dimen/terw_button_enter_vertical"
+                android:background="@drawable/enter_button"
+                android:backgroundTintMode="multiply"
+                android:text="@string/terw_button_enter"
+                android:textAllCaps="false"
+                android:textColor="#BFFFFFFF"
+                android:textSize="@dimen/terw_login_button_TEXT_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/iarw_top"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <Button
+                android:id="@+id/facebook_btn"
+                android:layout_width="@dimen/iarw_icon_size"
+                android:layout_height="@dimen/iarw_icon_size"
+                android:layout_weight="1"
+                android:background="@drawable/facebook"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/google_btn"
+                android:layout_width="@dimen/iarw_icon_size"
+                android:layout_height="@dimen/iarw_icon_size"
+                android:layout_marginHorizontal="@dimen/iarw_icon_horisontal"
+                android:layout_weight="1"
+                android:background="@drawable/googleg_standard_color_18"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/vk_btn"
+                android:layout_width="@dimen/iarw_icon_size"
+                android:layout_height="@dimen/iarw_icon_size"
+                android:layout_weight="1"
+                android:background="@drawable/vk"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/terw_register_btn_heigh"
+        android:layout_marginHorizontal="@dimen/terw_register_btn_horizontal"
+        android:layout_marginBottom="@dimen/terw_register_btn_top"
+        android:background="#00E5E5E5"
+        android:fontFamily="sans-serif"
+        android:text="@string/terw_btn_registr"
+        android:textAllCaps="false"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/terw_loginTEXT_size"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/forgot_passward"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/terw_register_btn_heigh"
+        android:layout_marginHorizontal="@dimen/terw_register_btn_horizontal"
+        android:layout_marginBottom="@dimen/terw_forgot_btn_top"
+        android:background="#00E5E5E5"
+        android:fontFamily="sans-serif"
+        android:text="@string/terw_btn_forgot"
+        android:textAllCaps="false"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/terw_loginTEXT_size"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>

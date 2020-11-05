@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "737310919016",
+    "firebase_url": "https://tinderthingstest.firebaseio.com",
+    "project_id": "tinderthingstest",
+    "storage_bucket": "tinderthingstest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737310919016:android:b33d75f55c371c1a986edd",
+        "android_client_info": {
+          "package_name": "com.example.myfirstanaltry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737310919016-vmjs0o9oumq1j65batp2e91m7b8bp61v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myfirstanaltry",
+            "certificate_hash": "8933039a7906cce069d5d1de5b534dc4e1069fbc"
+          }
+        },
+        {
+          "client_id": "737310919016-pvn205pmn39gm56u6a3el6eltoetm8c7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVWmdvb8_hRZsi2mBMHIA6E16vLFzNH2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737310919016-pvn205pmn39gm56u6a3el6eltoetm8c7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

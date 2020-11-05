@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyFirstAnalTry</string>
+    <string name="about_me_const">Обо мне</string>
+    <string name="rating_const">Рейтинг</string>
+    //text elements register window - terw
+    <string name="terw_design_TEXT">Кто вы?\nНемедленно\nназовитесь!</string>
+    <string name="login">Эл. почта</string>
+    <string name="name">Имя</string>
+    <string name="surname">Username</string>
+    <string name="passward">Пароль</string>
+    <string name="terw_button_enter">Войти</string>
+    <string name="terw_btn_registr">Регистрация</string>
+    <string name="terw_btn_forgot">Забыли пароль?</string>
+    <string name="terw_btn_already_exist">Уже есть аккаунт</string>
+    <string name="terw_register_text">Извините, но\nкто вы?\nВпервые вижу!</string>
+</resources>

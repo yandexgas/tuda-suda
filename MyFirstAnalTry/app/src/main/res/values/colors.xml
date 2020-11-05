@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="background">#E5E5E5</color>
+    <color name="text_header">#CC000000</color>
+    <color name="text_main">#80000000</color>
+    <color name="edit_text_signIN">#BE91C366</color>
+    <color name="enter_button">#84CC47</color>
+    <color name="err_color">#D3F14538</color>
+</resources>
