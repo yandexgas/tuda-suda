@@ -12,6 +12,7 @@ import android.widget.Toast
 import org.json.JSONObject
 import java.lang.Exception
 import java.net.URLEncoder
+import khttp.*
 
 class Register_window : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,14 @@ class Register_window : AppCompatActivity() {
             var email: com.rengwuxian.materialedittext.MaterialEditText = findViewById(R.id.sign_email_login)
             var pass: com.rengwuxian.materialedittext.MaterialEditText = findViewById(R.id.sign_passward)
             var Rec = object : RequestAsync(username = username.text.toString(),email = email.text.toString(),name = URLEncoder.encode(name.text.toString(),"utf-8"),pass = pass.text.toString()){
+                override protected fun onPreExecute() {
+                    var Post: JSONObject = JSONObject()
+                    Post.put("username",username);
+                    Post.put("email",email);
+                    Post.put("name",name);
+                    Post.put("password",pass);
+                    Toast.makeText(applicationContext,Post.toString(), Toast.LENGTH_LONG).show()
+                }
                 override protected fun onPostExecute(result: String?) {
                     if(result!=null) Toast.makeText(applicationContext,result.toString(), Toast.LENGTH_LONG).show()
                 }
@@ -47,7 +56,7 @@ class Register_window : AppCompatActivity() {
                 Post.put("email",email);
                 Post.put("name",name);
                 Post.put("password",pass);
-                return Post("http://chat.2sha.ru/api/users/", Post);
+                return Post("http://79.174.13.160/?format=openapi#definitions/User", Post);
             }
             catch (e: Exception){
                 return e.message.toString();
